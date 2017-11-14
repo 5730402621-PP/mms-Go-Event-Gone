@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Go Event Gone</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jasny-bootstrap.min.css" type="text/css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+        <!-- Line Icons CSS -->
+    <link rel="stylesheet" href="assets/fonts/line-icons/line-icons.css" type="text/css">
+        <!-- Line Icons CSS -->
+    <link rel="stylesheet" href="assets/fonts/line-icons/line-icons.css" type="text/css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="assets/extras/animate.css" type="text/css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/extras/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/extras/owl.theme.css" type="text/css">
+    <!-- Responsive CSS Styles -->
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css">
+    <!-- Slicknav js -->
+    <link rel="stylesheet" href="assets/css/slicknav.css" type="text/css">
+    <!-- Bootstrap Select -->
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <!-- Date timepicker-->
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="all" href="assets/css/daterangepicker.css" />
+    <script type="text/javascript" src="assets/js/moment.js"></script>
+    <script type="text/javascript" src="assets/js/daterangepicker.js"></script>
+
+  </head>
+
+  <body>
+    <!-- Header Section Start -->
+
+    <div class="header">
+      <nav class="navbar navbar-default main-navigation" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand logo" href="index.html"><img src="assets/img/logo.png" alt=""></a>
+          </div>
+          <!-- brand and toggle menu for mobile End -->
+
+          <!-- Navbar Start -->
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="login.html"><i class="lnr lnr-enter"></i> Sign-in</a></li>
+              <li><a href="signup.html"><i class="lnr lnr-user"></i> Sign-up</a></li>
+              <li class="postadd">
+                <a class="btn btn-danger btn-post" href="post-ads.html"><span class="fa fa-plus-circle"></span> Post request </a>
+              </li>
+            </ul>
+          </div>
+          <!-- Navbar End -->
+        </div>
+      </nav>
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Start intro section -->
+    <section id="intro">
+      <br/>
+      <div class="overlay">
+        <div class="container">
+          <div class="main-text">
+
+
+            <!-- Start Search box -->
+            <div class="row search-bar">
+              <div class="advanced-search">
+                <form class="search-form" method="get">
+
+                  <div class="col-md-3 col-sm-6 ">
+                    <input class="form-control keyword" name="keyword" value="" placeholder="Enter Location" type="text">
+                    <i class="fa fa-search"></i>
+                  </div>
+
+                    <div class="col-md-4 demo">
+                      <input type="text" id="datepicker" class="form-control">
+                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                    </div>
+
+                    <script type="text/javascript">
+                      var options = {};
+                      options.timePicker = true;
+                      options.startDate = "12/01/2017";
+                      options.endDate = "12/31/2017"
+
+                      $('#datepicker').daterangepicker(options);
+                    </script>
+
+
+                  <div class="col-md-3 col-sm-6">
+                    <div class="search-category-container">
+                        <select class="dropdown-product selectpicker" name="product-cat">
+                          <option value="0">Capacity : All</option>
+                          <option value="50">< 50 m&sup2;</option>
+                          <option value="100"> 50 - 100 m&sup2;</option>
+                          <option value="150">100 - 150 m&sup2;</option>
+                          <option value="200">150 - 200 m&sup2;</option>
+                          <option value="250">200 - 250 m&sup2;</option>
+                          <option value="300">250 - 300 m&sup2;</option>
+                          <option value="350">300 - 350 m&sup2;</option>
+                          <option value="400">350 - 400 m&sup2;</option>
+                          <option value="450">400 - 450 m&sup2;</option>
+                          <option value="500">> 500 m&sup2;</option>
+                        </select>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2 ">
+                    <button class="btn btn-common btn-search btn-block"><strong>Search</strong></button>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            <!-- End Search box -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end intro section -->
+
+
+      <!-- Featured Listings Start -->
+      <section class="featured-lis" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 wow fadeIn" data-wow-delay="0.5s">
+              <h3 class="section-title">Result</h3>
+              <div id="new-products" class="owl-carousel">
+                <div class="item">
+                  <div class="product-item">
+                    <div class="carousel-thumb">
+                      <img src="assets/img/place/2.png" alt="">
+                    </div>
+                    <a href="detail.html" class="price">อโศก</a>
+                    <span>เริ่มต้นที่ 2,000 บาท / วัน</span>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="product-item">
+                    <div class="carousel-thumb">
+                      <img src="assets/img/place/3.png" alt="">
+                      <div class="overlay">
+                        <a href="ads-details.html"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <a href="ads-details.html" class="price">นานา</a>
+                    <span >เริ่มต้นที่ 1,500 บาท / วัน</span>
+                  </div>
+                </div>
+
+                <div class="item">
+                  <div class="product-item">
+                    <div class="carousel-thumb">
+                      <img src="assets/img/place/4.png" alt="">
+                      <div class="overlay">
+                        <a href="ads-details.html"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <a href="ads-details.html" class="price">เพลินจิต</a>
+                    <span>เริ่มต้นที่ 1,200 บาท / วัน</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-item">
+                    <div class="carousel-thumb">
+                      <img src="assets/img/place/5.png" alt="">
+                      <div class="overlay">
+                        <a href="ads-details.html"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <a href="ads-details.html" class="price">ชิดลม</a>
+                    <span>เริ่มต้นที่ 1,800 บาท / วัน </span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-item">
+                    <div class="carousel-thumb">
+                      <img src="assets/img/place/6.png" alt="">
+                      <div class="overlay">
+                        <a href="ads-details.html"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <a href="ads-details.html" class="price">สยาม</a>
+                    <span>เริ่มต้นที่ 3,000 บาท / วัน</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-item">
+                    <div class="carousel-thumb">
+                      <img src="assets/img/place/7.png" alt="">
+                      <div class="overlay">
+                        <a href="ads-details.html"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <a href="ads-details.html" class="price">ราชเทวี</a>
+                    <span>เริ่มต้นที่ 1,400 บาท / วัน</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-item">
+                    <div class="carousel-thumb">
+                      <img src="assets/img/place/8.png" alt="">
+                      <div class="overlay">
+                        <a href="ads-details.html"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <a href="ads-details.html" class="price">พร้อมพงษ์</a>
+                    <span>เริ่มต้นที่ 1,200 บาท / วัน</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="product-item">
+                    <div class="carousel-thumb">
+                      <img src="assets/img/place/9.png" alt="">
+                      <div class="overlay">
+                        <a href="ads-details.html"><i class="fa fa-link"></i></a>
+                      </div>
+                    </div>
+                    <a href="ads-details.html" class="price">สีลม</a>
+                    <span>เริ่มต้นที่ 2,800 บาท / วัน</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Featured Listings End -->
+
+    <!-- Footer Section Start -->
+    <footer>
+    	<!-- Copyright Start  -->
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="site-info pull-left">
+                <p>All copyrights reserved @ 2016 - Design & Development by <a rel="nofollow" href="http://graygrids.com">Graygrids</a></p>
+              </div>
+              <div class="bottom-social-icons social-icon pull-right">
+                <a class="facebook" target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                <a class="twitter" target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                <a class="dribble" target="_blank" href="#"><i class="fa fa-dribbble"></i></a>
+                <a class="flickr" target="_blank" href="#"><i class="fa fa-flickr"></i></a>
+                <a class="youtube" target="_blank" href="#"><i class="fa fa-youtube"></i></a>
+                <a class="google-plus" target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                <a class="linkedin" target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Main JS  -->
+    <script type="text/javascript" src="assets/js/jquery-min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/material.min.js"></script>
+    <script type="text/javascript" src="assets/js/material-kit.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="assets/js/jasny-bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+
+  </body>
+</html>
