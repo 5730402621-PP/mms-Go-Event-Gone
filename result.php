@@ -53,7 +53,7 @@
           <!-- Navbar Start -->
           <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="login.php"><i class="lnr lnr-enter"></i> Sign-in</a></li>
+              <li><a href="signin.php"><i class="lnr lnr-enter"></i> Sign-in</a></li>
               <li><a href="signup.php"><i class="lnr lnr-user"></i> Sign-up</a></li>
               <li class="postadd">
                 <a class="btn btn-danger btn-post" href="post-ads.html"><span class="fa fa-plus-circle"></span> Post request </a>
