@@ -209,7 +209,7 @@
                     <div class=\"item\">
                       <div class=\"product-item\">
                         <div class=\"carousel-thumb\">
-                          <img src=\"assets/img/place/%s/00.jpg\" alt=\"\">
+                          <img src=\"assets/img/place/%s/00.jpg\" width=200 height=130 alt=\"\">
                           <div class=\"overlay\">
                             <a href=\"detail.php?pid=%s\"><i class=\"fa fa-link\"></i></a>
                           </div>
